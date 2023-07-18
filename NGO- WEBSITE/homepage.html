@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style02.css">
+</head>
+
+<body onload="slider()">
+    <div class="banner">
+        <div class="slider">
+            <img src="./Images/img1.jpg" id="slideImg">
+        </div>
+            <div class="overlay">
+                <div class="navbar">
+                    <div class="logo">
+                        <img src="icons/worldwide.png" alt="">
+                    </div>
+                    <div class="menu-icons">
+                        <a href="index.html"><img src="icons/contact.png"></a>
+                        <img src="icons/menu.png">
+                        <img src="icons/shopping-cart.png">
+                    </div>
+                </div>
+                <div class="content">
+                    <h1>LET'S START HERE</h1>
+                    <h3>There are those who give with joy, and that joy is their reward</h3>
+                    <div>
+                        <button type="button"> DONATE</button>
+                        <button type="button" class="btn-2"> VISIT US</button>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <script>
+        var slideImg = document.getElementById("slideImg");
+
+        var images = new Array(
+            "./Images/img1.jpg",
+            "./Images/img2.jpg",
+            "./Images/img4.jpg",
+            "./Images/img5.jpg"
+        );
+        var len = images.length;
+        var i = 0;
+
+        function slider(){
+            if(i>len-1){
+                i = 0;
+            }
+            slideImg.src = images[i];
+            i++;
+            setTimeout('slider()',3000);
+        }
+    </script>
+</body>
+
+</html>

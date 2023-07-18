@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNUP</title>
+    <style>
+body,
+html{
+    min-height: 100%;
+}
+body{
+    background-image: url('Images/sky.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+ .form{
+    width: 320px;
+    height: 600px;
+    background:black;
+    color: aqua;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    box-sizing: border-box;
+    padding: 70px 30px;
+        }
+        .loginbox p{
+    margin:0 ;
+    padding: 0;
+    font-weight: bold;
+}
+.form input{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.form input[type="text"], input[type="password"]{
+    border: none;
+    border-bottom: 1px solid #fff;
+    background: transparent;
+    height: 40px;
+    color:#fff;
+    font-size: 16px;
+}   
+.form input[type="submit"]{
+    border: none;
+    outline: none ;
+    height: 40px;
+    background: aqua;
+    color:#fff;
+    font-size: 18px;
+    border-radius: 20px;
+}
+.form input[type="submit"]:hover
+{
+    cursor:pointer;
+    background: #ffc107;
+    color:#000;
+}
+    </style>
+</head>
+<body>
+    <form class="form">
+        <h2>Complete the form</h2>
+        <p>Firstname</p>
+        <input type="text" name="first name" placeholder="Firstname"><br>
+        Last name:
+        <input type="text" name="last name" placeholder="Last name"><br>
+        <p>Date of Birth:</p>
+        <input type="date" name="date"><br>
+        <p>Password:</p>
+        <input type="password" name="password"><br>
+        <input type="submit" name="" value="SUBMIT">
+    </form>
+</body>
+</html>
